@@ -1,18 +1,5 @@
-import Head from 'next/head';
-import Image from 'next/image';
-
-// const foo = 'aa';
+import Main from 'components/Main';
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Localize Pet</title>
-      </Head>
-      <section>
-        <p>Hellow World</p>
-        <Image src={'../../public/output-onlinegiftools.gif'} />
-      </section>
-    </>
-  );
+  return <Main />;
 }
