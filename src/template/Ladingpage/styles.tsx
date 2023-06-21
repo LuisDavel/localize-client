@@ -133,7 +133,6 @@ export const InputSubmit = styled.input`
   background: white;
   border: none;
   outline: none;
-
 `;
 
 export const Icon = styled.div`

@@ -6,7 +6,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    console.log(req.body)
+    console.log(req.body);
     const response = await api.post('user', req.body);
     res.status(200).json(response.data);
   } catch (error) {

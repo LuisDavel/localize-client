@@ -24,14 +24,14 @@ export default function Profile({ animal, user }: ProfileProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const user_id = 2;
-  const resAnimal = await api.get(`/animal?user=${user_id}`);
-  const resUser = await api.get(`/user?user=${user_id}`);
+  // const user_id = 2;
+  // const resAnimal = await api.get(`/animal?user=${user_id}`);
+  // const resUser = await api.get(`/user?user=${user_id}`);
 
   return {
     props: {
-      animal: resAnimal.data,
-      user: resUser.data
+      // animal: resAnimal.data,
+      // user: resUser.data
     },
     revalidate: 10
   };

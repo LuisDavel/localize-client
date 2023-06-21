@@ -5,9 +5,8 @@ import LandingPage from 'template/Ladingpage';
 export default function Login() {
   return (
     <div>
-
       <button onClick={() => signOut()}>Sign Out</button>;
       <button onClick={() => signIn('google')}>Sign in</button>;
     </div>
-  )
+  );
 }

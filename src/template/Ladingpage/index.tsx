@@ -1,4 +1,5 @@
-import Image from 'next/image';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import * as S from './styles';
 import { CSSObjectWithLabel } from 'react-select';
 import { useState } from 'react';

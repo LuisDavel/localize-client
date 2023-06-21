@@ -4,9 +4,7 @@ import CardPets, { CardPetsProps } from '.';
 export default {
   title: 'CardPets',
   component: CardPets,
-  args: {
-
-  }
+  args: {}
 } as Meta;
 
 export const Default: Story<CardPetsProps> = (args) => <CardPets {...args} />;
