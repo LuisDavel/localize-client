@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle, css } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Author-Regular';
@@ -13,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: 'Author-Semibold';
-    src: url('../fonts/Author-Semibold.woff2') format('woff2'),
+    src: url('..fonts/Author-Semibold.woff2') format('woff2'),
         url('../fonts/Author-Semibold.woff') format('woff'),
         url('../fonts/Author-Semibold.ttf') format('truetype');
         font-weight: 600;
@@ -26,15 +25,20 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  html {
-    font-size: 62.5%;
-  }
-  html, body, #__next {
-    height: 100%;
-  }
-  body {
-    font-family: 'Author-Semibold' ,'Open Sans', 'Helvetica Neue', sans-serif
-  }
+
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
+    html,
+    body,
+    #__next {
+      height: 100%;
+    }
+    body {
+      font-family: ${theme.font.family};
+    }
+  `}
 `;
 
 export default GlobalStyles;

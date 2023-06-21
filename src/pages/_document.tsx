@@ -37,6 +37,11 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="dog_preenchido.svg" />
         <Head />
         <body>
           <Main />
